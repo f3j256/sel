@@ -12,11 +12,12 @@ public class TestHelp {
 
     public static Response getApi(String endpoint){
 
-        return given()
+        Response response = given()
                 .baseUri("https://reqres.in")
                 .when()
                 .log().all()
                 .get(endpoint);
+        return response;
     }
 
 
