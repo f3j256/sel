@@ -1,5 +1,4 @@
-package org.example;
-
+package testt;
 
 import io.restassured.RestAssured;
 import io.restassured.path.json.JsonPath;
@@ -13,12 +12,11 @@ public class TestHelp {
 
     public static Response getApi(String endpoint){
 
-        Response response = given()
+        return given()
                 .baseUri("https://reqres.in")
                 .when()
                 .log().all()
                 .get(endpoint);
-        return response;
     }
 
 
@@ -62,7 +60,7 @@ public class TestHelp {
 
 
 
-
     public static void main(String[] args) {}
 
 }
+

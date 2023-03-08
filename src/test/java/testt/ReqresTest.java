@@ -1,11 +1,13 @@
-import io.restassured.path.json.JsonPath;
+package testt;
+
+
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-import static org.example.TestHelp.*;
+import static testt.TestHelp.*;
 
 
 public class ReqresTest {
